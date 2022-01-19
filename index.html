@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="source/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/881e663436.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="box whole-thing">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h2>Weather</h2>
+        </div>
+        <div class="col-9">
+          <nav class="nav cities">
+            <a class="nav-link" aria-current="page" href="#">Boston</a>
+            <a class="nav-link" href="#">London</a>
+            <a class="nav-link" href="#">Shanghai</a>
+            <a class="nav-link" href="#">Sydney</a>
+          </nav>
+        </div>
+      </div>
+      <div class="container cities" style="text-align: right;">
+        <form id="searching">
+          <div class="row">
+            <div class="col-xxl-7">
+              <input type="search" 
+              placeholder="Enter a city" 
+              autocomplete="off" 
+              id="city-input" />
+            </div>
+            <div class="col-md-2">
+              <input type="submit" value="Search" id="submit" class="btn btn-primary" />
+            </div>
+            <div class="col-md-auto"><button class="btn btn-info" id="current-city">Current City</button></div>
+          </div>
+        </form>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table style="width: 100%;">
+            <tr>
+              <th class="table"><img src="media/cloudy.png" alt="partly cloudy" width="100" /></th>
+            </tr>
+            <tr>
+              <th class="table"><h2><span id="temperature">30</span>°
+                <span> 
+                <a href="#" id="fahrenheit">F</a>  / 
+                <a href="#" id="celcius">C</a>
+              </span></h2></th>
+              </tr>
+              <tr>
+                <th class="table proper" id="forecast">Sunny</th>
+              </tr>
+              <tr>
+                <th class="table"><h4 id="location" class="proper">Boston</h4></th>
+                <th class="table"><h4 id="feels-like">Feels Like: 10°</h4></th>
+            </tr>
+            <tr>
+              <th class="table" ><h4 id="date-time"></h4</th>
+                <th class="table"><h4 id="humid">Humidity: 20%</h4></th>
+            </tr>
+          </table>
+         </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table style="width: 100%;">
+          <tr class="col-12" style="text-align: center;">
+            <th id="the-day">Sunday</th>
+            <th id="the-day">Monday</th>
+            <th id="the-day">Tuesday</th>
+            <th id="the-day">Wednesday</th>
+            <th id="the-day">Thursday</th>
+            <th id="the-day">Friday</th>
+            <th id="the-day">Saturday</th>
+            </tr>
+            <tr class="col-12" style="text-align: center;">
+            <th><img src="media/rain.png" alt="rainy" width="75" /></th>
+            <th><img src="media/snow.png" alt="snow" width="75" /></th>
+            <th><img src="media/sun.png" alt="sunny" width="75" /></th>
+            <th><img src="media/sun.png" alt="sunny" width="75" /></th>
+            <th><img src="media/cloud.png" alt="cloudy" width="75" /></th>
+            <th><img src="media/cloud.png" alt="cloudy" width="75" /></th>
+            <th><img src="media/rain.png" alt="rainy" width="75" /></th>
+          </tr>
+          <tr class="col-12" style="text-align: center;">
+            <th>35°/20°<br />Rainy</th>
+            <th>22°/20°<br />Snow</th>
+            <th>39°/30°<br />Sunny</th>
+            <th>30°/30°<br />Sunny</th>
+            <th>29°/17°<br />Cloudy</th>
+            <th>40°/23°<br />Cloudy</th>
+            <th>45°/37°<br />Rainy</th>
+          </tr>
+          </table>
+        </div>
+       
+
+    
+     <script src="source/index.js"></script>
+  </body>
+</html>

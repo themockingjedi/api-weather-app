@@ -1,0 +1,48 @@
+.col-temp {
+  text-align: center;
+}
+
+.weather-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.cities {
+  float: right;
+}
+
+.box {
+  position: absolute;
+  border: 2px solid darkslategrey;
+  margin: 175px 550px;
+  padding: 40px 10px;
+  box-shadow: gray 5px 5px 5px;
+  border-radius: 30px;
+}
+
+.list {
+  list-style: none;
+}
+
+.other {
+  list-style: none;
+  float: right;
+}
+
+.table {
+  width: 50%;
+  white-space: nowrap;
+  padding: 5px 25px 10px 5px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: crosshair;
+}
+
+.proper {
+  text-transform: capitalize;
+}
